@@ -1,10 +1,10 @@
-name: housing-price-project
+name: house-pricing-project
 
 entry_points:
   train:
     parameters:
       model: {type: str, default: "elasticnet"}
-      experiment: {type: str, default: "housing-price-exp"}
+      experiment: {type: str, default: "house-pricing-exp"}
     command: >
       python src/train.py
       --model {model}

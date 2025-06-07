@@ -43,7 +43,7 @@ xgb_param_grid: Dict[str, List] = {
     'reg_lambda': [1.0],
 }
 
-# Master dictionary for access by name
+# Dictionary for access by name
 param_grids: Dict[str, Dict[str, List]] = {
     "ridge": ridge_param_grid,
     "elasticnet": elasticnet_param_grid,

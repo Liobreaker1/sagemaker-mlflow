@@ -72,7 +72,7 @@ class ModelTrainer:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, default="elasticnet", help="Model to train")
-    parser.add_argument("--experiment", type=str, default="housing-price-exp", help="MLflow experiment name")
+    parser.add_argument("--experiment", type=str, default="house-pricing-exp", help="MLflow experiment name")
     args = parser.parse_args()
 
     mlflow.set_tracking_uri("http://127.0.0.1:5000")

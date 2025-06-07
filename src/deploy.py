@@ -22,7 +22,7 @@ def deploy_model(
         "synchronous": True
     }
 
-    print(f"🔄 Deploying model: {model_uri} → Endpoint: {endpoint_name}")
+    print(f"Deploying model: {model_uri} → Endpoint: {endpoint_name}")
     mlflow.sagemaker.deploy(
         app_name=endpoint_name,
         model_uri=model_uri,
@@ -36,7 +36,7 @@ def deploy_model(
         archive=False,
         synchronous=True
     )
-    print(f"✅ Model deployed successfully to endpoint: {endpoint_name}")
+    print(f"Model deployed successfully to endpoint: {endpoint_name}")
 
 
 if __name__ == "__main__":
