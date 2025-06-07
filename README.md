@@ -9,5 +9,5 @@ Este proyecto implementa un flujo de entrenamiento de modelos de regresión util
 ### Ejecutar directamente con Python
 
 ```bash
-PYTHONPATH=. python src/train.py --model ridge --experiment housing-price-final
+python src/train.py --model ridge --experiment housing-price-final
 ```
